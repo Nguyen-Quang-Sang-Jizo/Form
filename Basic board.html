@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title> Table simple </title>
-<style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-</style>
-<body>
-<table>
+
+<body style="background-color: aqua">
+<table style="background-color: aliceblue">
     <tr>
-        <th>Company</th>
-        <th>Contact</th>
-        <th>Country</th>
+        <th colspan="4" style="background-color: red ; color: white ">SỞ THÍCH CỦA BẠN</th>
     </tr>
     <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
+        <td style="float: right">Họ và tên</td>
+        <td colspan="2">
+            <label>
+                <input type="text" style="width: 100%">
+            </label>
+        </td>
     </tr>
     <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td style="float: right">Email</td>
+        <td colspan="2">
+            <label>
+                <input type="text" style="width: 70%">
+            </label>
+        </td>
     </tr>
     <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
+        <td style="float: right">Sở thích</td>
+        <td>
+            <label>
+                <input type="checkbox"> Thể thao
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox">Âm nhạc
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox">Đọc sách
+            </label>
+        </td>
     </tr>
     <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
+        <td></td>
+        <td><label>
+            <input type="checkbox">Lướt web
+        </label>
+        </td>
+        <td>
+            <label>
+                <input type="checkbox">Chơi game
+            </label>
+
+        </td>
+        <td>
+            <label>
+                <input type="checkbox">Điện ảnh
+            </label>
+        </td>
     </tr>
     <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
+        <td></td>
+        <td><label>
+            <input type="checkbox">Du lịch
+        </label>
     </tr>
     <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
+        <td></td>
+        <td><input  type="submit" value="Gửi thông tin">
+        </td>
+        <td><input  type="reset" value="Nhập lại"></td>
     </tr>
+
+
 </table>
+
 </body>
 </html>
